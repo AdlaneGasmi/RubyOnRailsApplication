@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_03_17_125612) do
 
   create_table "personnages", force: :cascade do |t|
+  	
     t.string "Nom"
     t.integer "Points_de_vie"
     t.integer "Points_attaque"
