@@ -7,21 +7,25 @@
       <th>Nom</th>
       <th>Points de vie</th>
       <th>Points attaque</th>
-      <th ></th>
+     <!--  <th >user id </th> -->
+      <th > </th>
     </tr>
   </thead>
 
   <tbody>
     <% @personnages.each do |personnage| %>
+    <% if current_user.id == personnage.user_id %>
       <tr>
-
+   
          <td><%= link_to  personnage.Nom , personnage %>
                   </td>
         <!-- <td><%= personnage.Nom %></td> -->
         <td><%= personnage.Points_de_vie %></td>
         <td><%= personnage.Points_attaque %></td>
-       <td><%= link_to 'Supprimer',  personnage, method: :delete, data: { confirm: 'Are you sure?'},class:"btn btn-outline-danger btn-sm"  %></td>
+<!--         <td><%= personnage.user_id %></td>
+ -->       <td><%= link_to 'Supprimer',  personnage, method: :delete, data: { confirm: 'Are you sure?'},class:"btn btn-outline-danger btn-sm"  %></td>
       </tr>
+      <% end %>
     <% end %>
 
 
