@@ -1,0 +1,27 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+     <%= @personnage.Nom %>
+
+  </h1>
+  <p class="lead">
+  	
+  <p>
+  <strong>Points de vie:</strong>
+  <%= @personnage.Points_de_vie %>
+</p>
+
+<p>
+  <strong>Points attaque:</strong>
+  <%= @personnage.Points_attaque %>
+</p>
+
+  </p>
+  <br/>
+
+  <%= link_to 'Edit', edit_personnage_path(@personnage), class:"btn btn-secondary" %>
+<%= link_to 'Delete', @personnage, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+   
+<%= link_to 'Back', personnages_path, class:"btn btn-dark" %>
+
+</div>

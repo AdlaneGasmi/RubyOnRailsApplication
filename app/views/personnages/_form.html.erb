@@ -1,0 +1,37 @@
+
+
+
+<%= form_with(model: personnage) do |form| %>
+  <% if personnage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(personnage.errors.count, "error") %> prohibited this personnage from being saved:</h2>
+
+      <ul>
+        <% personnage.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field  form-group">
+      <%= form.text_field :Nom , class:"form-control", placeholder:"Nom" 
+     %>
+  </div>
+<br/>
+  <div class="field  form-group">
+<!--     <%= form.label :Points_de_vie %>
+ -->    <%= form.number_field :Points_de_vie , class:"form-control", placeholder:"Points de vie "  
+ %>
+  </div>
+<br/>
+  <div class="field  form-group">
+<!--     <%= form.label :Points_attaque %>
+ -->    <%= form.number_field :Points_attaque , class:"form-control", placeholder:"Points d'attaque" 
+   %>
+  </div>
+<br/>
+  <div class="actions">
+    <%= form.submit class:'btn btn-secondary' %>
+  </div>
+<% end %>

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  #get 'home/index'
+ 
+  resources :personnages
 
   root'home#index'
+
+  get 'home/about'
 end
