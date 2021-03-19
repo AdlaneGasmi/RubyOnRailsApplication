@@ -1,12 +1,11 @@
-Dans cette application une interface de jeu de combat à été développée, avec un systeme d'authentification et un système CRUD pour les utilisateurs et les personnages : 
+Dans cette application une interface de jeu de combat à été développée, avec un système d'authentification et un système CRUD pour les utilisateurs et les personnages :
+1/- Via la page d'accueil, l'utilisateur peut créer un compte et puis se connecter à son espace membre.
 
-1/- Via la page d'acceuil, l'utilisateur peut créer un compte et puis se connecter à son espace membre.
+2/- Une fois connecté sur son espace membre, l'utilisateur peut modifier/supprimer son compte.
 
-2/- Une fois connecté sur son éspace membre, l'utilisateur peut Modifier/supprimmer son compte.
+3/- L'utilisateur peut également créer plusieurs personnages (Nom, Points de vie, Points d'attaque), les sauvegarder dans la base de donnée, afficher la liste des personnages, et puis éventuellement les mettre à jour ou bien les supprimer.
 
-3/- L'utilisateur peut égalment créer plusieurs personnages, les sauvegarder dans la base de donnée, afficher la liste des personnages, et puis éventuellment les mettres à jours ou bien les supprimer.
-
-4/- En selectionnant deux personnages, l'utilisateur peut lancer un combat et afficher le gagnant, et il pourrra faire autant de combat qu'il souhaite avec deux personnages de son choix.
+4/- En sélectionnant deux personnages, l'utilisateur peut lancer un combat et afficher le gagnant, et il pourra faire autant de combat qu'il souhaite avec deux personnages de son choix.
 
 Documentation :
 
