@@ -14,4 +14,4 @@ Documentation :
 
 - Authentication solution for Rails (devise) : https://rubygems.org/gems/devise 
 
-- Documentation : https://github.com/heartcombo/devise#configuring-models
+- Documentation (devise) : https://github.com/heartcombo/devise#configuring-models
