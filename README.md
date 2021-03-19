@@ -1,4 +1,5 @@
 Dans cette application une interface de jeu de combat à été développée, avec un système d'authentification et un système CRUD pour les utilisateurs et les personnages :
+
 1/- Via la page d'accueil, l'utilisateur peut créer un compte et puis se connecter à son espace membre.
 
 2/- Une fois connecté sur son espace membre, l'utilisateur peut modifier/supprimer son compte.
