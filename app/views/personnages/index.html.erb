@@ -1,5 +1,5 @@
 
-<h1> Personnages </h1>
+<h2> Personnages </h2>
 
 <table class="table table-striped table-bordered table-hover">
   <thead class="table-dark">
@@ -7,7 +7,6 @@
       <th>Nom</th>
       <th>Points de vie</th>
       <th>Points attaque</th>
-      <th >user id </th> 
       <th > </th>
     </tr>
   </thead>
@@ -19,27 +18,30 @@
    
          <td><%= link_to  personnage.Nom , personnage %>
                   </td>
-        <!-- <td><%= personnage.Nom %></td>     -->
+     
         <td><%= personnage.Points_de_vie %></td>
         <td><%= personnage.Points_attaque %></td>
-        <td><%= personnage.user_id %></td>
        <td><%= link_to 'Supprimer',  personnage, method: :delete, data: { confirm: 'Are you sure?'},class:"btn btn-outline-danger btn-sm"  %></td>
       </tr>
       <% end %>
     <% end %>
 
-    <form  action="/search">
-    <div class="field  form-group">
+  </tbody>
+</table>
+
+<h2> Choisissez deux personnages pour lancer le combat </h2>
+
+<div class="field  form-group">
+    <form  action="/combat">
+    
 
     <input  type="text" name="personnage1" class ="form-control" placeholder="Tappez votre premier personnage" >
      </div>
      <div class="field  form-group">
     <input  type="text" name="personnage2" class ="form-control"  placeholder="Tappez votre deuxieme personnage" >
    </div>
+   <br/>
     <button type="submit" class="btn btn-secondary"> Lancer le combat </button>
+    <br/>
   </div>
-
-
-  </tbody>
-</table>
 

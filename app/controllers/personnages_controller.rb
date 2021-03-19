@@ -1,5 +1,5 @@
 class PersonnagesController < ApplicationController
-  before_action :set_personnage, only: %i[ show edit update destroy ]
+   before_action :set_personnage, only: %i[ show edit update destroy ]
 
    before_action :authenticate_user!, except: [:index, :show]
 
@@ -23,11 +23,12 @@ class PersonnagesController < ApplicationController
   def edit
   end
 
-  def search
+  def combat
+
   @personnage1=current_user.personnages.where("Nom LIKE ?","%" + params[:personnage1])
   @personnage2=current_user.personnages.where("Nom LIKE ?","%" + params[:personnage2])
    
-   end 
+  end 
 
  # POST /personnages or /personnages.json
   def create

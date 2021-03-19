@@ -2,7 +2,7 @@
 
 
 <div   class="jumbotron">
-	
+
   <h1 class="display-4">
      <h1>Modifier Personnage</h1>
   </h1>
@@ -10,9 +10,9 @@
   	
   <%= render 'form', personnage: @personnage %>
   <br/>
- <%= link_to 'Show', @personnage,class:'btn btn-secondary' %> 
-<%= link_to 'Delete', @personnage, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-<%= link_to 'Back', personnages_path, class:'btn btn-dark' %>
+ <%= link_to 'Détails du personnage', @personnage,class:'btn btn-secondary' %> 
+<%= link_to 'Supprimer', @personnage, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<%= link_to 'Retour', personnages_path, class:'btn btn-dark' %>
 
   </p>
 

@@ -20,10 +20,10 @@
   </p>
   <br/>
 
-  <%= link_to 'Edit', edit_personnage_path(@personnage), class:"btn btn-secondary" %>
-<%= link_to 'Delete', @personnage, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  <%= link_to 'Modifier', edit_personnage_path(@personnage), class:"btn btn-secondary" %>
+<%= link_to 'Supprimer', @personnage, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
    
-<%= link_to 'Back', personnages_path, class:"btn btn-dark" %>
+<%= link_to 'Retour', personnages_path, class:"btn btn-dark" %>
 
 
 </div>

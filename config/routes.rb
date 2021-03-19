@@ -5,10 +5,9 @@ Rails.application.routes.draw do
 
   
   root'home#index'
-  get '/search',to:"personnages#search"
-
-  get 'home/about'
+  get '/combat',to:"personnages#combat"
   get 'home/combat'
+
 end
 
 

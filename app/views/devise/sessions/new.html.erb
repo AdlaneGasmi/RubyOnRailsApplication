@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <h4>Log in</h4>
+    <h4>Se connecter </h4>
   </div>
   <div class="card-body">
   
@@ -14,7 +14,7 @@
 <br/>
   <div class="field form-group">
     <%= f.password_field :password, autocomplete: "current-password",
-    class:"form-control", placeholder:"password"
+    class:"form-control", placeholder:"Mot de passe"
      %>
   </div>
 <br/>
@@ -22,12 +22,12 @@
     <div class="field form-check">
       <%= f.check_box :remember_me,
       class:"form-check-input" %>
-      <%= f.label :remember_me %>
+      <%= f.label :se_souvenir_de_moi %>
     </div>
   <% end %>
 <br/>
   <div class="actions ">
-    <%= f.submit "Log in", class:'btn btn-secondary' %>
+    <%= f.submit "Se connecter", class:'btn btn-secondary' %>
   </div>
 <% end %>
 <br/>

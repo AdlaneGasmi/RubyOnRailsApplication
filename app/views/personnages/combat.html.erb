@@ -24,7 +24,7 @@
                   </td>
         <td><%= personnage1.Points_de_vie %></td>
         <td><%= personnage1.Points_attaque %></td>
-       <td><%= link_to 'Félicatations!',class:"btn btn btn-success"  %></td>
+       <td> <%= link_to 'Félicatations '+ personnage1.Nom + '!' ,personnage1, class:"btn btn-success"  %></td>
       </tr>
      <% end %>
  <% if  personnage2.Points_attaque >= personnage1.Points_de_vie %>
@@ -36,7 +36,10 @@
        
         <td><%= personnage2.Points_de_vie %></td>
         <td><%= personnage2.Points_attaque %></td>
-       <td><%= link_to 'Félicatations!', class:"btn btn-success"  %></td>
+       <td> <%= link_to 'Félicatations '+ personnage2.Nom + '!' ,personnage2, class:"btn btn-success"  %></td>
+
+          
+
       </tr>
     <% end %>
 
