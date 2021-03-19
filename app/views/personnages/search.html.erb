@@ -1,0 +1,47 @@
+<h1>Le gagnant est : </h1>
+
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Nom</th>
+      <th>Points de vie</th>
+      <th>Points attaque</th>
+      
+      <th > </th>
+    </tr>
+  </thead>
+
+  <tbody>  
+
+  	
+    <% @personnage1.each  do |personnage1|%>
+       <% @personnage2.each do |personnage2| %>
+    <% if  personnage1.Points_attaque > personnage2.Points_de_vie %>
+      <tr>
+   
+         <td><%= link_to  personnage1.Nom , personnage1 %>
+                  </td>
+        <td><%= personnage1.Points_de_vie %></td>
+        <td><%= personnage1.Points_attaque %></td>
+       <td><%= link_to 'Félicatations!',class:"btn btn btn-success"  %></td>
+      </tr>
+     <% end %>
+ <% if  personnage2.Points_attaque >= personnage1.Points_de_vie %>
+      <tr>
+
+      <tr>
+         <td><%= link_to  personnage2.Nom , personnage2 %>
+                  </td>
+       
+        <td><%= personnage2.Points_de_vie %></td>
+        <td><%= personnage2.Points_attaque %></td>
+       <td><%= link_to 'Félicatations!', class:"btn btn-success"  %></td>
+      </tr>
+    <% end %>
+
+  	<% end %>
+  		<% end %>
+
+  		
+     

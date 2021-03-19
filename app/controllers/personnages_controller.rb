@@ -23,11 +23,18 @@ class PersonnagesController < ApplicationController
   def edit
   end
 
-  # POST /personnages or /personnages.json
+  def search
+  @personnage1=current_user.personnages.where("Nom LIKE ?","%" + params[:personnage1])
+  @personnage2=current_user.personnages.where("Nom LIKE ?","%" + params[:personnage2])
+   
+   end 
+
+ # POST /personnages or /personnages.json
   def create
+    @personnage1.Nom= params[:Nom]
     #@personnage = Personnage.new(personnage_params)
   @personnage =current_user.personnages.build(personnage_params)
-  
+
     respond_to do |format|
       if @personnage.save
         format.html { redirect_to @personnage, notice: "Personnage was successfully created." }
