@@ -32,7 +32,6 @@ class PersonnagesController < ApplicationController
 
  # POST /personnages or /personnages.json
   def create
-    @personnage1.Nom= params[:Nom]
     #@personnage = Personnage.new(personnage_params)
   @personnage =current_user.personnages.build(personnage_params)
 
