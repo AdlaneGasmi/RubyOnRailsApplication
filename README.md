@@ -1,4 +1,4 @@
-Dans cette application une application de jeu de combat à été développée, avec un système d'authentification et un système CRUD pour les utilisateurs et les personnages :
+Dans cette application une application de jeu de combat à été développée avec le framework Ruby on Rails,, avec un système d'authentification et un système CRUD pour les utilisateurs et les personnages :
 
 1/- Via la page d'accueil, l'utilisateur peut créer un compte et puis se connecter à son espace membre.
 
